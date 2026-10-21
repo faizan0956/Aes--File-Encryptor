@@ -63,6 +63,4 @@ aes-file-encryptor/
 
 HTML, CSS, JavaScript (Web Crypto API)
 
-## Author
 
-Reeb ([am-cybersec](https://github.com/am-cybersec))
