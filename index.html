@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AES-256 File Encryptor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="icon-box">🔒</div>
+      <h1>AES-256 File Encryptor</h1>
+    </div>
+    <p class="subtitle">Encrypt &amp; Decrypt Files in Your Browser</p>
+
+    <label class="label label-blue">📁 File</label>
+    <div id="dropZone" class="drop-zone">
+      <p id="dropText">Drag &amp; drop a file here, or click to browse</p>
+    </div>
+    <input id="file" type="file" hidden>
+    <div id="fileInfo" class="file-info"></div>
+
+    <label for="key" class="label label-orange">🔑 Secret Key</label>
+    <input id="key" type="password" placeholder="Enter a strong passphrase" autocomplete="off">
+
+    <div class="btn-row">
+      <button id="encBtn" class="btn btn-green">🔒 Encrypt</button>
+      <button id="decBtn" class="btn btn-blue">🔓 Decrypt</button>
+    </div>
+
+    <div class="progress" id="progressWrap" hidden>
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
